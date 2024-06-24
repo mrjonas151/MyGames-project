@@ -1,0 +1,22 @@
+.games-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-item img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.game-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
