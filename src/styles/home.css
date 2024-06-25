@@ -1,3 +1,171 @@
+*{
+    background-color: #3A299F;
+    font-style: normal;
+    line-height: normal;
+    font-family: Poppins, sans-serif;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+#logo-container a{
+    text-decoration: none;
+}
+
+#logo{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav a{
+    color: #FFF;
+    text-decoration: none;
+    
+    opacity: 0.8;
+    transition: all 0.7s;
+}
+
+nav a:hover{
+    opacity: 1.2;
+    transform: scale(1.2);
+    color:#FA9021;
+}
+
+nav button{
+    background-color: #FA9021;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
+
+    opacity: 0.8;
+    transition: all 0.7s;
+}
+
+nav button:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 2%;
+}
+
+#content-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#first-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+#title-first-section{
+    color: #E87D0E;
+    -webkit-text-stroke: #1E1E1E 0.5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#first-section h1{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+#text-first-section{
+    color: #FFF;
+    font-size: 14px;
+}
+
+#first-section button{
+    background-image: linear-gradient(to right, #E87D0E, #FA9020, #FB962B, #FB9E3C);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
+    width: 30%;
+    font-weight: bold;
+
+    opacity: 0.8;
+    transition: all 0.7s;
+
+}
+
+#first-section button:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#second-section{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#container-see-all{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-see-all h2{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#container-see-all button{
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+
+    opacity: 0.8;
+    transition: all 0.7s;
+
+}
+
+
 .games-container {
     display: flex;
     gap: 20px;

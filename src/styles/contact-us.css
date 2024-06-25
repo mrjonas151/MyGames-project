@@ -1,0 +1,68 @@
+*{
+    background-color: #3A299F;
+    font-style: normal;
+    line-height: normal;
+    font-family: Poppins, sans-serif;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+#logo-container a{
+    text-decoration: none;
+}
+
+#logo{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav a{
+    color: #FFF;
+    text-decoration: none;
+    
+    opacity: 0.8;
+    transition: all 0.7s;
+}
+
+nav a:hover{
+    opacity: 1.2;
+    transform: scale(1.2);
+    color:#FA9021;
+}
+
+nav button{
+    background-color: #FA9021;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
+
+    opacity: 0.8;
+    transition: all 0.7s;
+}
+
+nav button:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
