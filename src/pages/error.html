@@ -22,9 +22,21 @@
                 <a href="error.html">About us</a>
                 <a href="error.html">Portfolio</a>
                 <a href="error.html">News</a>
-                <button>Contact us</button>
+                <button onclick="redirectContact()">Contact us</button>
             </nav>
         </header>
+        <div id="main-container">
+            <div id="error-container">
+                <h1>404 - Page not found</h1>
+                <img src="../img/matrix.png" alt="matrix-image"/>
+                <div id="button-container">
+                    <button onclick="redirectHome()" id="button-back">Back to home</button>
+                    <button onclick="redirectContact()" id="button-contact">Contact us</button>
+                </div>
+                
+            </div>     
+        </div>
     </div>
+    <script src="../scripts/error.js"></script>
 </body>
 </html>
