@@ -45,7 +45,7 @@
             <section id="content-container-2">
                 <div id="container-see-all">
                     <h2>Currently Trending Games</h2>
-                    <button>SEE ALL</button>
+                    <button class="see-all-button">SEE ALL</button>
                 </div>
                 <div class="games-container">
                     <div class="game-item">
@@ -105,12 +105,12 @@
                 <img src="../img/Rectangle 15.png" height="207px">
                 <img src="../img/Rectangle 16.png" height="207px">
                 <img src="../img/Rectangle 17.png" height="207px">
-                <img src="../img/Rectangle 18.png" height="207px">
                 <img src="../img/Rectangle 19.png" height="207px">
+                <img src="../img/Rectangle 18.png" height="207px">
                 <img src="../img/Rectangle 20.png" height="207px">
             </div>
             <div>
-                <button>SEE ALL</button>
+                <button class="see-all-button">SEE ALL</button>
             </div>
         </section>
         <section id="content-container-6">
@@ -126,8 +126,10 @@
                     </p>
                 </div>
                 <form class="subscribe-form">
-                    <input type="email" placeholder="Enter email address" required>
-                    <button>Continue</button>
+                    <div id="form-div">
+                        <input type="email" placeholder="Enter email address" required>
+                        <button>Continue</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -139,26 +141,30 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <p>@Lorem</p>
                 </div>
-                <div>
+                <div id="about-us">
                     <strong>About us</strong>
-                    <p>Zeux</p>
-                    <p>Portfolio</p>
-                    <p>Careers</p>
-                    <p>Contact us</p>
+                    <a href="error.html">Zeux</a>
+                    <a href="error.html">Portfolio</a>
+                    <a href="error.html">Careers</a>
+                    <a href="contact-us.html">Contact us</a>
                 </div>
                 <div id="contact-us-footer">
                     <strong>Contact us</strong>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p>+908 89097 890</p>
+                    <a href="">+908 89097 890</a>
                 </div>
-                <div>
-                    <p>icons</p>
+                <div class="social-images">
+                    <button onclick="redirectFacebook()"><img src="../img/Facebook - logo.png" height="35px"></button>
+                    <button onclick="redirectInstagram()"><img src="../img/instagram-logo.png" height="35px"></button>
+                    <button onclick="redirectTwitter()"><img src="../img/twitter-logo.png" height="35px"></button>
+                    <button onclick="redirectLinkedIn()"><img src="../img/Linkedin - logo.png" height="35px"></button>
+                    
                 </div>
                 <div id="white-line"></div>
             </div>
             <div id="horizontal-white-line-footer"></div>
             <div id="copyright">
-                <p>Copyright ® 2022 prodesigner All rights Rcerved</p>
+                <p>Copyright ® 2022 prodesigner All rights Reserved</p>
             </div>
         </footer>
     </div>
