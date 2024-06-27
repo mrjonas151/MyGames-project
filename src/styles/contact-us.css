@@ -1,8 +1,24 @@
 *{
-    background-color: #3A299F;
     font-style: normal;
     line-height: normal;
     font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3A299F;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 #main-container{
@@ -101,16 +117,35 @@ nav button:hover{
 #social-container{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 5px;
     color: #FFF;
     justify-content: space-between;
-    width: 90%;
+    padding-left: 5%;
+    width: 100%;
+}
+
+#follow button{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.7s;
+}
+
+#follow button:hover{
+    transform: scale(1.2);
 }
 
 #social-container #follow{
     text-decoration: none;
     align-items: center;
     font-size: 16px;
+}
+
+#telephone{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 #social-container #telephone{
@@ -134,6 +169,21 @@ nav button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#location{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#location p{
+    width: 70%;
+}
+
+#location img{
+    margin-bottom: 17px;
 }
 
 #form-container{
@@ -164,3 +214,195 @@ nav button:hover{
     cursor: pointer;    
 }
 
+
+
+
+
+
+
+
+
+
+
+
+#content-container-3{
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+    color: #FFF;
+    height: 70vh;
+    margin-top: 40px;
+    background-color: gray;
+
+} 
+
+#form-container-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: normal;
+    background-color: #1C140F;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 0 4%;
+    height: 27vh;
+    width: 97%;
+} 
+
+
+#content-container-6{
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+    color: #FFF;
+    height: 70vh;
+    margin-top: 40px;
+    background-color: #34305C;
+} 
+
+
+
+#form-container-6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: normal;
+    background-color: #1C140F;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 0 4%;
+    height: 27vh;
+    width: 97%;
+}
+
+#form-container-6 #text-form-6{
+    font-size: 15px;
+    width: 80%;
+    margin-right: 10px;
+}
+
+#form-container-6 #title-text{
+    font-size: 20px;
+}
+
+#form-div{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    width: 50wh;
+    height: 45px;
+    border-radius: 10px;
+}
+
+#form-div input{
+    height: 35px;
+    background-color: white;
+    width: 270px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#form-div button{
+    background-color: #DC7000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
+    margin: 5px 7px 5px;
+
+    transition: all 0.7s;
+}
+
+#form-div button:hover{
+    opacity: 1.1;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+footer{
+    position: relative;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+    color: #FFF;
+    width: 100%;
+}
+
+#content-footer{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 35px;
+    height: 35vh;
+}
+
+#copyright{
+    color: #FFF;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+#contact-us-footer{
+    width: 24%;
+}
+
+#logo-footer{
+    width: 32%;
+}
+
+#horizontal-white-line-footer{
+    position: absolute;
+    bottom: 55px;
+    left:0;
+    right: 0;
+    height: 1px;
+    background-color: #FFF;
+}
+
+.social-images{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+#about-us{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:first-of-type{
+    margin-top: 15px;
+}
+
+footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.7s;
+}
+
+footer button:hover{
+    transform: scale(1.2);
+}

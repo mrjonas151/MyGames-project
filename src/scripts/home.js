@@ -17,3 +17,7 @@ function redirectInstagram(){
 function redirectLinkedIn(){
     window.open("https://www.linkedin.com", "_blank");
 }
+
+function redirectError(){
+    window.location.href = "error.html";
+}
