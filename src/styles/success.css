@@ -1,0 +1,181 @@
+*{
+    font-style: normal;
+    line-height: normal;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3A299F;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+#logo-container a{
+    text-decoration: none;
+}
+
+#logo{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav a{
+    color: #FFF;
+    text-decoration: none;
+    
+    opacity: 0.8;
+    transition: all 0.7s;
+}
+
+nav a:hover{
+    opacity: 1.2;
+    transform: scale(1.2);
+    color:#FA9021;
+}
+
+nav button{
+    background-color: #FA9021;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
+
+    opacity: 0.8;
+    transition: all 0.7s;
+}
+
+nav button:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+#title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#title-container h1{
+    color: #FFF;
+    font-size: 30px;
+}
+
+
+
+
+footer{
+    position: relative;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+    color: #FFF;
+}
+
+#content-footer{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 35px;
+    height: 35vh;
+}
+
+#copyright{
+    color: #FFF;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+#contact-us-footer{
+    width: 24%;
+}
+
+#logo-footer{
+    width: 32%;
+}
+
+#horizontal-white-line-footer{
+    position: absolute;
+    bottom: 55px;
+    left:0;
+    right: 0;
+    height: 1px;
+    background-color: #FFF;
+}
+
+.social-images{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+#about-us{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:first-of-type{
+    margin-top: 15px;
+}
+
+footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.7s;
+}
+
+footer button:hover{
+    transform: scale(1.2);
+}

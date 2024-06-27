@@ -169,6 +169,15 @@ nav button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50vh;
+}
+
+#title-hello #say-hello{
+    font-size: 30px;
+}
+
+#title-hello p{
+    margin: 0;
 }
 
 #location{
@@ -184,6 +193,115 @@ nav button:hover{
 
 #location img{
     margin-bottom: 17px;
+}
+
+#form-content-3-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: #FFF;
+    margin-bottom: 50vh;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: #FFF;
+}
+
+#first-name-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#first-name-container input{
+    height: 40px; 
+    width: 294px;
+    background-color: #4F4F4F;  
+    border-radius: 5px;
+    border: 0.8px solid #CECECE;
+    color: #FFF;
+}
+
+#last-name-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#last-name-container input{
+    height: 40px; 
+    width: 294px;
+    background-color: #4F4F4F;  
+    border-radius: 5px;
+    border: 0.8px solid #CECECE;
+    color: #FFF;
+}
+
+#names-container{
+    display: flex;
+    flex-direction: row;
+    color: #4F4F4F;
+    font-size: 15px;
+    gap: 20px;
+}
+
+#email-form-3-container{
+    display: flex;
+    flex-direction: column;
+    color: #4F4F4F;
+}
+
+#email-form-3-container input{
+    height: 40px; 
+    background-color: #4F4F4F;  
+    border-radius: 5px;
+    border: 0.8px solid #CECECE;
+    width: 610px;
+    color: #FFF;
+}
+
+#message-container{
+    display: flex;
+    flex-direction: column;
+    color: #4F4F4F;
+}
+
+#message-container textarea{
+    height: 200px; 
+    width: 600px;
+    background-color: #4F4F4F;  
+    border-radius: 5px;
+    border: 0.8px solid #CECECE;
+    resize: none;
+    color: #FFF;
+}
+
+#message-container div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#message-container button{
+    background-color: #DC7000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    color: #FFF;
+    cursor: pointer;    
+    margin-top: 5vh;
+    width: 158px;
+
+    transition: all 0.7s;
+}
+
+#message-container button:hover{
+    opacity: 1.1;
+    transform: scale(1.1);
+    border-radius: 5px;
 }
 
 #form-container{
@@ -226,14 +344,21 @@ nav button:hover{
 
 
 #content-container-3{
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 0 8%;
     color: #FFF;
-    height: 70vh;
     margin-top: 40px;
-    background-color: gray;
+    background-color: #1C140F;
+    align-items: center;
 
+    min-height: 100vh;
+    justify-content: center; 
+    box-sizing: border-box;
+    width: 98.8vw; 
+    margin: 0; 
+    margin-top: 15vh;
 } 
 
 #form-container-3{
@@ -249,7 +374,7 @@ nav button:hover{
     padding: 0 4%;
     height: 27vh;
     width: 97%;
-} 
+}
 
 
 #content-container-6{
