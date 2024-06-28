@@ -293,8 +293,6 @@ nav button:hover{
 #first-name-container input{
     height: 6.2vh;
     width:21.4vw ;
-    /*height: 40px; 
-    width: 294px;*/
     background-color: #4F4F4F;  
     border-radius: 5px;
     border: 0.8px solid #CECECE;
@@ -370,13 +368,27 @@ nav button:hover{
     transition: all 0.7s;
 }
 
+#message-container button:disabled{
+    background-color: #DC7000;
+    opacity: 0.5;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    color: #FFF;
+    cursor: not-allowed;
+    height: 7vh;
+    width: 28%;
+    margin-bottom: 15vh;
+    margin-top: 3vh;
+}
+
 #message-container button:hover{
     opacity: 1.1;
     transform: scale(1.1);
     border-radius: 5px;
 }
 
-.error-p{
+#error-email, #error-first-name, #error-last-name, #error-message{
     visibility: hidden;
     color: #FF6961;
     font-size: 12px;
@@ -435,6 +447,27 @@ nav button:hover{
     border-radius: 10px;
 }
 
+#form-div{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    width: 50wh;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 6vh;
+}
+
+#received-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#received-container #hide-received{
+    visibility: hidden;
+    color: green;
+    font-size: 12px;
+}
+
 #form-div input{
     height: 35px;
     background-color: white;
@@ -455,6 +488,17 @@ nav button:hover{
     margin: 5px 7px 5px;
 
     transition: all 0.7s;
+}
+
+#form-div #continue-button:disabled{
+    background-color: #DC7000;
+    opacity: 0.65;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: not-allowed;
+    margin: 5px 7px 5px;
 }
 
 #form-div button:hover{

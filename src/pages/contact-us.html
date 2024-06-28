@@ -75,25 +75,25 @@
                             <div id="first-name-container">
                                 <label>First Name</label>
                                 <input type="text" name="name" id="name">
-                                <p class="error-p" id="error-first-name">Error (Invalid name)</p>
+                                <p id="error-first-name">Error (Invalid name)</p>
                             </div>
                             <div id="last-name-container">
                                 <label>Last Name</label>
                                 <input type="text" name="lastName" id="lastName">
-                                <p class="error-p" id="error-last-name">Error (Invalid last name)</p>
+                                <p id="error-last-name">Error (Invalid last name)</p>
                             </div>
                         </div>
                         <div id="email-form-3-container">
                             <label>Email</label>
                             <input type="email" name="email" id="email">
-                            <p class="error-p" id="error-email">Error (Invalid email format)</p>
+                            <p id="error-email">Error (Invalid email format)</p>
                         </div>
                         <div id="message-container">
                             <label>Message</label>
                             <textarea name="message" id="message"></textarea>
-                            <p class="error-p" id="error-message">Error (Min 10 characters)</p>
+                            <p id="error-message">Error (Min 10 characters)</p>
                             <div>
-                                <button>Get in touch</button>
+                                <button id="get-in-touch-button" disabled>Get in touch</button>
                             </div>  
                         </div> 
                     </form>
@@ -114,9 +114,12 @@
                 </p>
             </div>
             <form class="subscribe-form">
-                <div id="form-div">
-                    <input type="email" placeholder="Enter email address" required>
-                    <button>Continue</button>
+                <div id="received-container">
+                    <div id="form-div">
+                    <input type="email" id="email-input" placeholder="Enter email address" required>
+                    <button id="continue-button" disabled>Continue</button>  
+                </div>
+                    <p id="hide-received">We received your email. Thanks!</p>
                 </div>
             </form>
         </div>

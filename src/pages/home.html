@@ -32,7 +32,7 @@
                     <p id="title-first-section">Proved by prodesigner</p>
                     <h1>Work that we produce for our clients</h1>
                     <p id="text-first-section">Lorem Ipsun is simply dummy text of the printing and typesetting industry. Lorem Ipsun has been the industry's standard.</p>
-                    <button>Get more details</button>
+                    <button onclick="redirectError()">Get more details</button>
                 </div>
                 <div id="second-section">
                     <div>
@@ -50,7 +50,7 @@
             <section id="content-container-2">
                 <div id="container-see-all">
                     <h2>Currently Trending Games</h2>
-                    <button class="see-all-button">SEE ALL</button>
+                    <button onclick="redirectError()" class="see-all-button">SEE ALL</button>
                 </div>
                 <div class="games-container">
                     <div class="game-item">
@@ -153,7 +153,7 @@
                 <img src="../img/Rectangle 20.png" height="214px" alt="two arcades">
             </div>
             <div>
-                <button class="see-all-button">SEE ALL</button>
+                <button onclick="redirectError()" class="see-all-button">SEE ALL</button>
             </div>
         </section>
         <section id="content-container-6">
@@ -169,9 +169,12 @@
                     </p>
                 </div>
                 <form class="subscribe-form">
-                    <div id="form-div">
-                        <input type="email" placeholder="Enter email address" required>
-                        <button>Continue</button>
+                    <div id="received-container">
+                        <div id="form-div">
+                        <input type="email" id="email-input" placeholder="Enter email address" required>
+                        <button id="continue-button" disabled>Continue</button>  
+                    </div>
+                        <p id="hide-received">We received your email. Thanks!</p>
                     </div>
                 </form>
             </div>

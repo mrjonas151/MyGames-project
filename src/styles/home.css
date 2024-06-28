@@ -496,6 +496,18 @@ nav button:hover{
     width: 50wh;
     height: 45px;
     border-radius: 10px;
+    margin-top: 6vh;
+}
+
+#received-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#received-container #hide-received{
+    visibility: hidden;
+    color: green;
+    font-size: 12px;
 }
 
 .subscribe-form input{
@@ -508,7 +520,7 @@ nav button:hover{
     margin-top: 5px;
 }
 
-.subscribe-form button{
+.subscribe-form #continue-button{
     background-color: #DC7000;
     border: none;
     border-radius: 5px;
@@ -518,6 +530,17 @@ nav button:hover{
     margin: 5px 7px 5px;
 
     transition: all 0.7s;
+}
+
+.subscribe-form #continue-button:disabled{
+    background-color: #DC7000;
+    opacity: 0.65;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: not-allowed;
+    margin: 5px 7px 5px;
 }
 
 .subscribe-form button:hover{

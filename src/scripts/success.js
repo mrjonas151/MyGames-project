@@ -23,7 +23,7 @@ function redirectError(){
 }
 
 function getLastPerson(){
-    let peopleJSON = JSON.parse(localStorage.getItem("person"));
+    let peopleJSON = JSON.parse(localStorage.getItem("people"));
     if(peopleJSON == null || peopleJSON.length == 0){
         let person = {
             name: "",
@@ -37,9 +37,15 @@ function getLastPerson(){
 }
 
 
-function showPerson(name, lastName, email, message){
+function showPerson(){
     let person = getLastPerson();
+    console.log(person)
     document.getElementById("fullName").innerText = person.name + " " + person.lastName;
     document.getElementById("email").innerText = person.email;
     document.getElementById("message").innerText = person.message;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    showPerson();
+});
+
