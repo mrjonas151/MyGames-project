@@ -195,7 +195,7 @@ nav button:hover{
     z-index: 1;
     position: absolute;
     right: -105px;
-    bottom: -60vh;
+    top: -60vh;
 }
 
 #container-see-all{
