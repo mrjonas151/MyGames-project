@@ -50,7 +50,7 @@ header{
 
 nav{
     display: flex;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
 }
 
@@ -105,13 +105,17 @@ nav button:hover{
 #first-text{
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     color: #FFF;
 }
 
+#first-text p{
+    margin-bottom: 25px;
+}
+
 #banner{
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 #social-container{
@@ -165,6 +169,9 @@ nav button:hover{
 }
 
 #title-hello{
+    position: relative;
+    z-index: 3;
+    margin-top: 5vh;
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -195,21 +202,87 @@ nav button:hover{
     margin-bottom: 17px;
 }
 
+#content-container-3{
+    position: relative;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+    color: #FFF;
+    background-color: #1C140F;
+    min-height: 110vh;
+    max-height: 110vh;
+    width: 98.8vw; 
+} 
+
+#content-container-3 #vector-3{
+    z-index: 2;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+}
+
+#img-1-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#img-2-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#content-container-3 #vector-4{
+   
+    position: absolute;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+}
+
+#form-container-3{
+    position: relative;
+    z-index: 4;
+    display: flex;
+    margin-top: 3vh;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 10px;
+    padding: 0 4%;
+    height: 0vh;
+    width: 100%;
+}
+
+
 #form-content-3-container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     color: #FFF;
-    margin-bottom: 50vh;
 }
 
 #contact-form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     color: #FFF;
+    gap: 20px;
+}
+
+#names-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #4F4F4F;
+    font-size: 15px;
+    gap: 20px;
 }
 
 #first-name-container{
@@ -218,8 +291,10 @@ nav button:hover{
 }
 
 #first-name-container input{
-    height: 40px; 
-    width: 294px;
+    height: 6.2vh;
+    width:21.4vw ;
+    /*height: 40px; 
+    width: 294px;*/
     background-color: #4F4F4F;  
     border-radius: 5px;
     border: 0.8px solid #CECECE;
@@ -232,21 +307,14 @@ nav button:hover{
 }
 
 #last-name-container input{
-    height: 40px; 
-    width: 294px;
+    height: 6.2vh;
+    width:21.4vw ;
     background-color: #4F4F4F;  
     border-radius: 5px;
     border: 0.8px solid #CECECE;
     color: #FFF;
 }
 
-#names-container{
-    display: flex;
-    flex-direction: row;
-    color: #4F4F4F;
-    font-size: 15px;
-    gap: 20px;
-}
 
 #email-form-3-container{
     display: flex;
@@ -255,11 +323,11 @@ nav button:hover{
 }
 
 #email-form-3-container input{
-    height: 40px; 
+    height: 6.2vh;
     background-color: #4F4F4F;  
     border-radius: 5px;
     border: 0.8px solid #CECECE;
-    width: 610px;
+    width: 44.3vw;
     color: #FFF;
 }
 
@@ -269,9 +337,10 @@ nav button:hover{
     color: #4F4F4F;
 }
 
+
 #message-container textarea{
-    height: 200px; 
-    width: 600px;
+    height: 30vh;
+    width: 44.3vw;
     background-color: #4F4F4F;  
     border-radius: 5px;
     border: 0.8px solid #CECECE;
@@ -279,10 +348,11 @@ nav button:hover{
     color: #FFF;
 }
 
+
 #message-container div{
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
 
 #message-container button{
@@ -292,8 +362,10 @@ nav button:hover{
     padding: 10px 40px;
     color: #FFF;
     cursor: pointer;    
-    margin-top: 5vh;
-    width: 158px;
+    height: 7vh;
+    width: 28%;
+    margin-bottom: 15vh;
+    margin-top: 3vh;
 
     transition: all 0.7s;
 }
@@ -304,78 +376,20 @@ nav button:hover{
     border-radius: 5px;
 }
 
-#form-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    color: #FFF;
+.error-p{
+    visibility: hidden;
+    color: #FF6961;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-#form-container input{
-    height: 30px; 
-    background-color: #4F4F4F;  
-    border-radius: 5px;
-    border: 0.8px solid #CECECE;
+#error-name{
+    color: #FF6961;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
-#form-container label{
-    color: #4F4F4F;
-}
-
-#form-container button{
-    background-color: #DC7000;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 30px;
-    color: #FFF;
-    cursor: pointer;    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#content-container-3{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 0 8%;
-    color: #FFF;
-    margin-top: 40px;
-    background-color: #1C140F;
-    align-items: center;
-
-    min-height: 100vh;
-    justify-content: center; 
-    box-sizing: border-box;
-    width: 98.8vw; 
-    margin: 0; 
-    margin-top: 15vh;
-} 
-
-#form-container-3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    font-weight: normal;
-    background-color: #1C140F;
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 0 4%;
-    height: 27vh;
-    width: 97%;
-}
-
 
 #content-container-6{
     display: flex;
@@ -383,11 +397,9 @@ nav button:hover{
     padding: 0 8%;
     color: #FFF;
     height: 70vh;
-    margin-top: 40px;
     background-color: #34305C;
+    justify-content: center;
 } 
-
-
 
 #form-container-6{
     display: flex;

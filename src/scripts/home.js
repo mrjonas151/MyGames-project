@@ -21,3 +21,8 @@ function redirectLinkedIn(){
 function redirectError(){
     window.location.href = "error.html";
 }
+
+function validateEmail(email){
+    let regex = /\S+@\S+\.\S+/
+    return regex.test(email);
+}

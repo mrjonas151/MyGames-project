@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success!</title>
+    <title>MyGames - Success!</title>
     <link rel="stylesheet" href="../styles/success.css">
+    <link rel="icon" type="image/png" href="../img/control-videogame.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -26,15 +27,36 @@
     </header>
     <section id="main-container">
         <div id="title-container">
-            <img src="../img/database-success.png" alt="Success" height="90">
             <h1>Form received successfully</h1>
+            <img src="../img/smile.png" alt="Smile" height="40px" alt="smile">
         </div>
-        <div>
-            <h2>Name</h2>
-            <h2>Last Name</h2>
-            <h2>Email</h2>
-            <h2>Message</h2>
+        <div id="information-container">
+            <div>
+                <img src="../img/database-success.png" alt="Success" height="120">
+            </div>
+            <div id="informations-received-container">
+                <div id="informations">
+                    <h2 id="info-title">Thank you for your message. We will contact you soon!</h2>
+                    <div class="align-text-row">
+                        <h3>Full Name:</h3>
+                        <h3 id="fullName"></h3>
+                    </div>
+                    
+                    <div class="horizontal-line"></div>
+                    <div class="align-text-row">
+                        <h3>Email:</h3>
+                        <h3 id="email"><h3>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="align-text-row">
+                        <h3>Message:</h3>
+                        <p id="message"></p>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
+        
     </section>
 
     <footer>
@@ -57,10 +79,10 @@
                 <a href="">+908 89097 890</a>
             </div>
             <div class="social-images">
-                <button onclick="redirectFacebook()"><img src="../img/Facebook - logo.png" height="35px"></button>
-                <button onclick="redirectInstagram()"><img src="../img/instagram-logo.png" height="35px"></button>
-                <button onclick="redirectTwitter()"><img src="../img/twitter-logo.png" height="35px"></button>
-                <button onclick="redirectLinkedIn()"><img src="../img/Linkedin - logo.png" height="35px"></button>
+                <button onclick="redirectFacebook()"><img src="../img/Facebook - logo.png" height="35px" alt="Facebook logo"></button>
+                <button onclick="redirectInstagram()"><img src="../img/instagram-logo.png" height="35px" alt="Instagram logo"></button>
+                <button onclick="redirectTwitter()"><img src="../img/twitter-logo.png" height="35px" alt="Twitter Logo"></button>
+                <button onclick="redirectLinkedIn()"><img src="../img/Linkedin - logo.png" height="35px" alt="Linkedin Logo"></button>
                 
             </div>
             <div id="white-line"></div>
