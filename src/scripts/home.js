@@ -33,24 +33,45 @@ document.addEventListener('DOMContentLoaded', function () {
     const hideReceived = document.getElementById("hide-received");
 
     emailInput.addEventListener("input", function () {
-        if (emailInput.value.trim() === "") {
+        const email = emailInput.value.trim();
+        if (email === "") {
             continueButton.disabled = true;
+            hideReceived.style.visibility = "hidden";
+        } else if (validateEmail(email)) {
+            continueButton.disabled = false;
+            hideReceived.style.visibility = "hidden";
         } else {
             continueButton.disabled = false;
+            hideReceived.textContent = "Error! Invalid email.";
+            hideReceived.style.color = "red";
+            hideReceived.style.visibility = "visible";
         }
     });
 
     continueButton.addEventListener("click", function (e) {
         e.preventDefault();
-        hideReceived.style.visibility = "visible";
-        emailInput.value = "";
-        let emailList = JSON.parse(localStorage.getItem("emailList")) || [];
-        emailList.push(emailInput.value.trim());
-        localStorage.setItem("emailList", JSON.stringify(emailList));
+        const email = emailInput.value.trim();
+
+        if (validateEmail(email)) {
+            let emailList = JSON.parse(localStorage.getItem("emailList")) || [];
+            emailList.push(email);
+            localStorage.setItem("emailList", JSON.stringify(emailList));
+            emailInput.value = "";
+
+            hideReceived.textContent = "Thanks, stay tuned to your inbox!!";
+            hideReceived.style.color = "green";
+            hideReceived.style.visibility = "visible";
+        } else {
+            hideReceived.textContent = "Error! Invalid email.";
+            hideReceived.style.color = "red";
+            hideReceived.style.visibility = "visible";
+        }
+
         continueButton.disabled = true;
         setTimeout(function () {
             hideReceived.style.visibility = "hidden";
         }, 3000);
     });
 });
+
 

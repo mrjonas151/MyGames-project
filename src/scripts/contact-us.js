@@ -137,6 +137,15 @@ document.addEventListener("DOMContentLoaded", function () {
             errorMessage.style.visibility = "hidden";
         }
 
+        if (
+            nameInput.value.trim() === "" ||
+            lastNameInput.value.trim() === "" ||
+            emailInput.value.trim() === "" ||
+            messageInput.value.trim() === ""
+        ) {
+            validator = false;
+        }
+
         getInTouchButton.disabled = !validator;
         return validator;
     }
@@ -178,13 +187,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     validateForm(); 
 
+
+    emailInput2.addEventListener("input", function () {
+        const email = emailInput2.value.trim();
+        if (email === "") {
+            continueButton.disabled = true;
+            hideReceived.style.visibility = "hidden";
+        } else if (validateEmail(email)) {
+            continueButton.disabled = false;
+            hideReceived.style.visibility = "hidden";
+        } else {
+            continueButton.disabled = false;
+            hideReceived.textContent = "Error! Invalid email.";
+            hideReceived.style.color = "red";
+            hideReceived.style.visibility = "visible";
+        }
+    });
+
     continueButton.addEventListener("click", function (e) {
         e.preventDefault();
-        hideReceived.style.visibility = "visible";
-        emailInput2.value = "";
-        let emailList = JSON.parse(localStorage.getItem("emailList")) || [];
-        emailList.push(emailInput2.value.trim());
-        localStorage.setItem("emailList", JSON.stringify(emailList));
+        const email = emailInput2.value.trim();
+
+        if (validateEmail(email)) {
+            let emailList = JSON.parse(localStorage.getItem("emailList")) || [];
+            emailList.push(email);
+            localStorage.setItem("emailList", JSON.stringify(emailList));
+            emailInput2.value = "";
+
+            hideReceived.textContent = "Thanks, stay tuned to your inbox!";
+            hideReceived.style.color = "green";
+            hideReceived.style.visibility = "visible";
+        } else {
+            hideReceived.textContent = "Error! Invalid email.";
+            hideReceived.style.color = "red";
+            hideReceived.style.visibility = "visible";
+        }
+
         continueButton.disabled = true;
         setTimeout(function () {
             hideReceived.style.visibility = "hidden";
